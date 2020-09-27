@@ -1,0 +1,39 @@
+164  187页
+
+
+
+# Resource Blocks
+Selects the number of allocated resource blocks. This parameter influences the
+allowed modulation types.
+Remote command:
+CONFigure: LTE: SIGN<i>: CONNection[: PCC]: RMC: DL<Stream>
+CONFigure: LTE: SIGN<i>: CONNection: SCC: RMC: DL<Stream>
+CONFigure: LTE: SIGN<i>: CONNection[: PCC]: RMC: UL
+Version
+Some TDD RMCs defined by 3GPP have the same channel bandwidth, number of
+RBs, modulation type and transport block size index. The parameter "Version" is introduced
+to distinguish between these RMCs.
+For the meaning of the version values, see chapter 2.2.12.3, "DL RMCs, Multiple TX
+Antennas", on page 51.
+Remote command:
+CONFigure: LTE: SIGN<i>: CONNection[: PCC]: RMC: VERSion: DL<Stream>
+CONFigure: LTE: SIGN<i>: CONNection: SCC: RMC: VERSion: DL<Stream>
+RB Position/Start RB
+The RBs can be allocated at the lower or upper end of the cell bandwidth. The resulting
+number of the first allocated RB is displayed for information.
+Remote command:
+CONFigure: LTE: SIGN<i>: CONNection[: PCC]: RMC: RBPosition: DL<Stream>
+CONFigure: LTE: SIGN<i>: CONNection: SCC: RMC: RBPosition: DL<Stream>
+CONFigure: LTE: SIGN<i>: CONNection[: PCC]: RMC: RBPosition: UL
+Modulation Type
+Selects the modulation type. This parameter influences the transport block size index.
+Remote command:
+CONFigure: LTE: SIGN<i>: CONNection[: PCC]: RMC: DL<Stream>
+CONFigure: LTE: SIGN<i>: CONNection: SCC: RMC: DL<Stream>
+CONFigure: LTE: SIGN<i>: CONNection[: PCC]: RMC: UL
+Transport Block Size Index
+Displays the transport block size index, depending on the modulation type.
+Remote command:
+CONFigure: LTE: SIGN<i>: CONNection[: PCC]: RMC: DL<Stream>
+CONFigure: LTE: SIGN<i>: CONNection: SCC: RMC: DL<Stream>
+CONFigure: LTE: SIGN<i>: CONNection[: PCC]: RMC: UL
